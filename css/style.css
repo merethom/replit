@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&display=swap');
+@import url("https://use.typekit.net/dis6yak.css");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+nav.desktop {
+	display: none;
+}
+ 
+html {
+	font-family: 'DM Sans', sans-serif;
+}
+
+.dark {
+	background: #000;
+	color: #fff;
+}
+ 
+.grid {
+	gap: 25px;
+	margin: 0 300px;
+}
+
+a.button {
+	text-decoration: none;
+	padding: 8px 40px;
+	border-radius: 50px;
+	transition: all 200ms ease-in;
+	color:#E1EEF0;
+	background: rgba(254,169,37,0);
+	border: 2px solid #ffa91f;
+	font-family: jaf-lapture, serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 18px;
+}
+
+a.button:hover {
+	background: rgba(254,169,37,1);
+}
+
+section {
+		padding: 250px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+	.grid {
+			grid-gap: 20px;
+			margin: 0 25px;
+	}
+
+	section {
+		padding: 125px 0;
+	}
+
+  h1 {
+		font-size: 40px;
+	}
+
+	
+}
+
+
+@media only screen and (min-width: 601px) {
+
+	.grid {
+			margin: 0 200px;
+	}
+
+	nav.mobile {
+		display: none;
+	}
+
+	nav.desktop {
+		display: grid;
+	}
+	
+}
+
+
+
+
+
+
+/* HEADER SECTION */
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 25px 100px;
+	align-items: center;
+	background: #FFA91F;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+header a img {
+	height: 25px;
+	width: auto;
+}
+
+header nav {
+	font-size: 18px;
+	text-align: right;
+}
+
+header nav a {
+	margin-left: 30px;
+	color: #E1EEF0;
+}
+
+header nav a.active,
+header nav a:hover {
+	border-bottom: solid 2px #000;
+	padding-bottom: 2px;
+}
+
+
+/* index.html HERO SECTION */
+
+section#hero {
+	background: #06191F;
+	background: url('../img/hero.png') center 0% no-repeat;
+	background-size: cover;
+	color: #E1EEF0;
+/* 	padding: 0; */
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-family: jaf-lapture, serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+h1 span {
+	font-family: jaf-lapture, serif;
+	font-weight: 600;
+	font-style: italic;
+	color: #FFA91F;
+}
+
+section p {
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+
+
+/* index.html CONTENT SECTION */
+
+section#info {
+	background: #ffa91f;
+}
+
+section#info .info {
+	background: #06191F;
+	color: #E1EEF0;
+	padding: 75px 40px;
+	text-align: center;
+}
+
+section#info h2 {
+	font-family: jaf-lapture, serif;
+	font-weight: 600;
+	margin-bottom: 9px;
+	font-size: 32px;
+}
+
+section#info p {
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+#who, 
+#what, 
+#talk {
+	min-height: 400px;
+/* 	This is how I rounded just the top parts of the images to make an arch shape. */
+	border-radius: 500px 500px 0 0;
+}
+
+#who {
+	background: url('../img/who.jpeg') 15% center no-repeat;
+	background-size: cover;
+}
+
+#what {
+	background: url('../img/what.jpeg') 75% center no-repeat;
+	background-size: cover;
+}
+
+#talk {
+	background: url('../img/talk.jpeg') 25% center no-repeat;
+	background-size: cover;
+}
+
+
+
+
+/* About Page Styles */
+
+.rep-photo {
+	max-width: 100%;
+	height: auto;
+}
+
+/* FOOTER */
+
+footer {
+		background: #06191F;
+	color: #E1EEF0;
+	padding: 50px 0;
+	text-align: center;
+	font-size: 15px;
+}
